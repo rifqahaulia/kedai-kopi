@@ -111,7 +111,7 @@ body {
     transition: 0.3s;
   }
 
-  .navbar .navbar-nav .active {
+  .navbar .navbar-nav.active {
     right: 0;
   }
 
@@ -121,6 +121,14 @@ body {
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
   }
 }
 
